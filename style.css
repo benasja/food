@@ -1,47 +1,105 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* More modern font */
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #f4f4f4; /* Updated background color */
     color: #333;
+    line-height: 1.6; /* Improved readability */
 }
 
 header {
-    background-color: #007bff;
+    background-color: #3498db; /* Updated color */
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px; /* Increased padding */
+    position: relative; /* For potential absolute positioning inside */
+}
+
+header h1 {
+    font-size: 2.5em; /* Increased font size */
+    margin-bottom: 10px; /* Added space below */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
 }
 
 nav {
     margin: 20px 0;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center buttons horizontally */
+    flex-wrap: wrap; /* Allow buttons to wrap */
 }
 
 nav button {
     background-color: white;
-    color: #007bff;
-    border: 2px solid #007bff;
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin: 0 5px;
-    font-size: 16px;
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 25px; /* More rounded corners */
+    padding: 10px 25px; /* Increased padding */
+    margin: 5px; /* Adjusted margin */
+    font-size: 1.1em; /* Slightly larger font */
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: all 0.3s ease; /* Smoother transition */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 nav button:hover {
     background-color: #007bff;
     color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+    transform: translateY(-2px); /* Slightly raise button on hover */
 }
 
 main {
-    margin: 20px;
-    padding: 20px;
+    margin: 30px auto; /* Centered content with auto margin */
+    max-width: 900px; /* Limit content width */
+    padding: 30px;
     background: white;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Increased shadow */
 }
 
 h1, h2 {
-    color: #007bff;
+    color: #000000;
+}
+
+h2 {
+    margin-top: 0; /* Reduce space above h2 */
+}
+
+section {
+    margin-bottom: 40px; /* Increased space between sections */
+}
+
+ul {
+    list-style: disc; /* Changed to disc style */
+    margin-left: 20px; /* Indent list items */
+    line-height: 1.8; /* Increased line height */
+}
+
+li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* Image container styles (from previous example) */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.image-container figure {
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.image-container figcaption {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #555;
 }
